@@ -1,0 +1,20 @@
+<div class="product-details-container d-flex flex-column align-items-center">
+    <div class="product-detail-card card position-relative" style="width: 400px;">
+      
+      <!-- Ícono de flecha para regresar -->
+
+      <img class="card-img-top" [src]="product?.image" alt="{{ product?.title }}" />
+  
+      <div class="card-body">
+        <h5 class="card-title">{{ product?.title }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{ product?.category | titlecase }}</h6>
+        <p class="card-text">{{ product?.description }}</p>
+        <p><strong>Precio:</strong> {{ product?.price | currency }}</p>
+      </div>
+
+      <span class="back-arrow" (click)="goBack()" aria-label="Regresar a productos">&#8592;</span>
+
+  
+    </div>
+  </div>
+  

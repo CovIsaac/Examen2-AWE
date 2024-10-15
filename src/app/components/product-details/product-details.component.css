@@ -1,0 +1,14 @@
+.product-details-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .back-arrow {
+    position: absolute;
+    top: -20px;  /* Ajusta la posición vertical del ícono */
+    left: 10px;  /* Ajusta la posición horizontal del ícono */
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+    font-size: 24px; /* Tamaño del ícono */
+    color: #3f51b5; /* Color del ícono, puedes cambiarlo según tu tema */
+  }
+  

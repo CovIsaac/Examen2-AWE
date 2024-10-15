@@ -1,0 +1,14 @@
+<div class="product-list">
+  <mat-card *ngFor="let product of products" class="product-card" routerLink="/products/{{ product.id }}">
+
+    <div class="image-container">
+      <img [src]="product.image" alt="{{ product.title }}" />
+    </div>
+    <mat-card-header>
+      <div mat-card-avatar class="product-avatar"></div>
+      <mat-card-title>{{ product.title }}</mat-card-title>
+      <mat-card-subtitle>${{product.price}}</mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+</div>
+  
